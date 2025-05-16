@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+/* 📘 Blue confirm button */
+.swal-button--confirm.blue-confirm-button {
+  background-color: #1976D2 !important;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 6px 18px;
+}
+
+.swal-button--confirm.blue-confirm-button:hover {
+  background-color: #125ea9 !important;
+}
+
+/* 📘 Blue cancel button */
+.swal-button--cancel.blue-cancel-button {
+  background-color: #BBDEFB !important;
+  color: #0D47A1 !important;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 6px 18px;
+}
+
+.swal-button--cancel.blue-cancel-button:hover {
+  background-color: #90CAF9 !important;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

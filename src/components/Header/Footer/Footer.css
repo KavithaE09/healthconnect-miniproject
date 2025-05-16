@@ -1,0 +1,29 @@
+/* Style for text links */
+.text-style {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.text-style:hover {
+    color: #0d47a1; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Style for avatar icons */
+.avatar-hover {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.avatar-hover:hover {
+    background-color: #1565c0 !important; /* Slightly darker blue on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+    cursor: pointer;
+}
+
+/* Footer container */
+.sticky-container {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
