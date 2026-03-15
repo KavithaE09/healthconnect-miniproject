@@ -19,6 +19,7 @@ import Medicines from './pages/Medicines';
 // ✅ Import Nearby Hospitals & Reminders Pages
 import NearbyHospitalsPage from './pages/NearbyHospitalsPage';
 import Reminders from './pages/Reminders';
+import VideoConsultation from './pages/VideoConsultation';
 import MedicalHistory from "./components/MedicalHistory/MedicalHistory";
 
 // ✅ Import CartProvider and CartPage
@@ -65,6 +66,7 @@ function App() {
                   {/* ✅ New Routes */}
                   <Route exact path='/nearby-hospitals' component={NearbyHospitalsPage} />
                   <Route exact path='/reminders' component={Reminders} />
+                  <Route exact path='/video-consultation' component={VideoConsultation} />
                   <Route exact path='/medical-history' component={MedicalHistory} />
 
                   {/* 🛒 Cart Page Route */}

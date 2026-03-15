@@ -1,0 +1,163 @@
+.nearby-hospitals {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #1f2937;
+}
+
+.nearby-hospitals h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #0f172a;
+}
+
+.nearby-hospitals p {
+  color: #475569;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.search-panel {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.08);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-panel input,
+.search-panel select {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.95rem;
+  background: #f8fafc;
+}
+
+.hospitals-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.hospital-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 12px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hospital-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.12);
+}
+
+.hospital-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.hospital-card .hospital-body {
+  padding: 1rem;
+}
+
+.hospital-card h2 {
+  margin-bottom: 0.4rem;
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.hospital-card .info-row {
+  margin-bottom: 0.45rem;
+  display: flex;
+  align-items: center;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.hospital-card .info-row span {
+  margin-left: 0.4rem;
+}
+
+.hospital-card .spec-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.hospital-card .spec-pill {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+.hospital-card button,
+.action-btn,
+.cancel-btn {
+  width: 100%;
+  font-weight: 600;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.7rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.hospital-card button {
+  background: #0ea5e9;
+}
+
+.hospital-card button:hover,
+.action-btn:hover,
+.cancel-btn:hover {
+  opacity: 0.9;
+}
+
+.action-btn {
+  background: #10b981;
+  margin-top: 0.75rem;
+}
+
+.cancel-btn {
+  background: #94a3b8;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  width: min(92vw, 480px);
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  padding: 1.15rem;
+  box-shadow: 0 12px 18px rgba(15, 23, 42, 0.25);
+}
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+}

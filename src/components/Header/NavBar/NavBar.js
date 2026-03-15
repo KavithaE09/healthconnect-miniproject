@@ -77,6 +77,9 @@ const Navbar = () => {
               <MenuItem component={Link} to="/reminders" onClick={handleCloseDashboard}>
                 Reminders
               </MenuItem>
+              <MenuItem component={Link} to="/video-consultation" onClick={handleCloseDashboard}>
+                Online Consultation
+              </MenuItem>
               <MenuItem component={Link} to="/medical-history" onClick={handleCloseDashboard}>
                 Medical History
               </MenuItem>
@@ -128,6 +131,17 @@ const Navbar = () => {
                   About
                 </Button>
               </HashLink>
+
+              <Link to="/reminders" className="text-style">
+                <Button sx={{ color: 'white', '&:hover': { backgroundColor: '#5A9BD5' } }}>
+                  Reminders
+                </Button>
+              </Link>
+              <Link to="/medical-history" className="text-style">
+                <Button sx={{ color: 'white', '&:hover': { backgroundColor: '#5A9BD5' } }}>
+                  Medical History
+                </Button>
+              </Link>
 
               {/* Cart Button with Badge */}
               <Link to="/cart">
